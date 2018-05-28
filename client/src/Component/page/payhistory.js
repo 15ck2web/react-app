@@ -1,5 +1,6 @@
-var NewComponent = React.createClass({
-    render: function() {
+import React from 'react';
+class payhistory extends Component {
+  render() {
       return (
   
         <div className="container">
@@ -33,4 +34,5 @@ var NewComponent = React.createClass({
         </div>
       );
     }
-  });
+  }
+  export default payhistory;

@@ -1,5 +1,6 @@
-var NewComponent = React.createClass({
-    render: function() {
+import React from 'react';
+class table_modules extends Component {
+    render () {
       return (
   
         <section className="charts">
@@ -146,4 +147,5 @@ var NewComponent = React.createClass({
       </section>
     );
   }
-});
+}
+export default table_modules;

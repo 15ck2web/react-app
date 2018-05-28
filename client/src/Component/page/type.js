@@ -1,5 +1,6 @@
-var NewComponent = React.createClass({
-    render: function() {
+import React from 'react';
+class type extends Component {
+  render() {
       return (
         <div>
           <div className="container" style={{padding: 5}}>
@@ -59,4 +60,5 @@ var NewComponent = React.createClass({
         </div>
       );
     }
-  });
+  }
+  export default type;

@@ -1,14 +1,17 @@
-var NewComponent = React.createClass({
-    render: function() {
+import React from 'react';
+
+
+class footer extends Comment{
+    render () {
       return (
-  
+        <div>
         <footer className="footer" style={{minHeight: 100, background: '#262626', color: 'white'}}>
           <div className="container">
             <div className="row" style={{padding: '2%'}}>
               <div className="col-md-4">
                 <p>Địa Chỉ: 38/3 Nguyễn Thị Định Quận 2 TP Hồ Chí Minh</p>
                 <p>Email: <a href>salonquan2.gmail.com</a></p>
-                <p>website: <a href="http://localhost:21212/webbanhang/index.php">SaLonQ2.com.vn</a></p>
+                {/* <p>website: <a href="http://localhost:21212/webbanhang/index.php">SaLonQ2.com.vn</a></p> */}
               </div>
               <div className="col-md-4">
                 <p>hotline: 19001585</p>
@@ -21,6 +24,8 @@ var NewComponent = React.createClass({
             </div>
           </div>
         </footer>
+        </div>
       );
     }
-  });
+  }
+  export default footer;

@@ -1,5 +1,7 @@
-var NewComponent = React.createClass({
-    render: function() {
+import React from 'react';
+
+class index_user extends Component {
+    render () {
       return (
         <div>
           <div className="container">
@@ -69,4 +71,6 @@ var NewComponent = React.createClass({
         </div>
       );
     }
-  });
+  }
+  <script src="source/admin/js/user.js"></script>
+  export default index_user;

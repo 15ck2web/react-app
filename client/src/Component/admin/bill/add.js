@@ -1,5 +1,7 @@
-var NewComponent = React.createClass({
-    render: function() {
+import React from 'react';
+
+class add_bill extends Component {
+  render() {
       return (
   
         {/* Modal*/}
@@ -34,4 +36,7 @@ var NewComponent = React.createClass({
         </div>
       );
     }
-  });
+  }
+  
+
+  export default add_bill;

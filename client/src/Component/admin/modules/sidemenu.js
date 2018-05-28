@@ -1,5 +1,6 @@
-var NewComponent = React.createClass({
-    render: function() {
+import React from 'react';
+class sidemenu extends Component {
+    render () {
       return (
   
         <nav className="side-navbar">
@@ -36,4 +37,5 @@ var NewComponent = React.createClass({
         </nav>
       );
     }
-  });
+  }
+  export default sidemenu;

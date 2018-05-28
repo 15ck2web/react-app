@@ -1,5 +1,6 @@
-var NewComponent = React.createClass({
-    render: function() {
+import React from 'react';
+class order extends Component {
+  render() {
       return (
   
         <div style={{margin: '10% 0'}}>
@@ -154,4 +155,5 @@ var NewComponent = React.createClass({
         </div>
       );
     }
-  });
+  }
+  export default order;

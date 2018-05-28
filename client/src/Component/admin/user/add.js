@@ -1,5 +1,6 @@
-var NewComponent = React.createClass({
-    render: function() {
+import React from 'react';
+class add_user extends Component {
+    render () {
       return (
         <div>
           <button type="button" className="btn btn-primary" data-toggle="modal" data-target="#userModal">Add User</button>
@@ -73,4 +74,5 @@ var NewComponent = React.createClass({
         </div>
       );
     }
-  });
+  }
+  export default add_user;

@@ -1,5 +1,5 @@
-var show = React.createClass({
-    render: function() {
+class show_bill extends Component {
+  render() {
       return (
   
         <div id="detailModal" tabIndex={-1} role="dialog" aria-labelledby="exampleModalLabel" className="modal fade text-left" style={{display: 'none'}} aria-hidden="true">
@@ -32,5 +32,5 @@ var show = React.createClass({
         </div>
       );
     }
-  });
-  export default show;
+  }
+  export default show_bill;

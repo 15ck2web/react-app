@@ -1,5 +1,6 @@
-var NewComponent = React.createClass({
-    render: function() {
+import React from 'react';
+class search extends Component {
+  render() {
       return (
         <div>
           <div className="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12" style={{margin: '5% 0'}}>
@@ -39,4 +40,5 @@ var NewComponent = React.createClass({
         </div>
       );
     }
-  });
+  }
+  export default search;

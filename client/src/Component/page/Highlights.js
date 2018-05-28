@@ -1,5 +1,6 @@
-var NewComponent = React.createClass({
-    render: function() {
+import React from 'react';
+class Highlight extends Component {
+  render() {
       return (
         <div>
           <div className="marquee" style={{textAlign: 'center'}}>
@@ -124,4 +125,5 @@ var NewComponent = React.createClass({
         </div>
       );
     }
-  });
+  }
+  export default Highlight;

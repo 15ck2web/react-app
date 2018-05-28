@@ -1,5 +1,6 @@
-var NewComponent = React.createClass({
-    render: function() {
+import React from 'react';
+class addauth extends Component {
+    render() {
       return (
         <div>
           <button style={{float: 'right'}} type="button" className="btn btn-info" data-toggle="modal" data-target="#signUpModal">Đăng Ký</button>
@@ -75,4 +76,5 @@ var NewComponent = React.createClass({
         </div>
       );
     }
-  });
+  };
+  export default addauth;

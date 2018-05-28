@@ -1,5 +1,7 @@
-var NewComponent = React.createClass({
-    render: function() {
+
+import React from 'react';
+class add_user_type extends Component {
+    render () {
       return (
         <div>
           <button type="button" data-toggle="modal" data-target="#myModal" className="btn btn-primary"><span><i className="fa fa-plus" aria-hidden="true" /> Type</span></button>
@@ -30,4 +32,5 @@ var NewComponent = React.createClass({
         </div>
       );
     }
-  });
+  }
+  export default add_user_type;

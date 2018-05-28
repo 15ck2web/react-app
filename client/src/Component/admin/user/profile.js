@@ -1,5 +1,6 @@
-var NewComponent = React.createClass({
-    render: function() {
+import React from 'react';
+class profile extends Component {
+    render() {
       return (
         <div>
           <link rel="stylesheet" href="source/css/profile.css" />
@@ -58,4 +59,5 @@ var NewComponent = React.createClass({
         </div>
       );
     }
-  });
+  }
+  export default profile;

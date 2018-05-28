@@ -1,5 +1,5 @@
-var NewComponent = React.createClass({
-    render: function() {
+class index_bill extends Component {
+    render() {
       return (
   
         <div className="container">
@@ -42,5 +42,6 @@ var NewComponent = React.createClass({
         // <?php include('show.php'); ?>  
          );
   }
-});
+}
 <script src="source/admin/js/bill.js"></script>
+export default index_bill;

@@ -1,5 +1,5 @@
-var NewComponent = React.createClass({
-    render: function() {
+class add_factory extends Component {
+  render() {
       return (
         <div>
           <button type="button" data-toggle="modal" data-target="#myModal" className="btn btn-primary"><span><i className="fa fa-plus" aria-hidden="true" /> Thêm</span></button>
@@ -34,4 +34,5 @@ var NewComponent = React.createClass({
         </div>
       );
     }
-  });
+  }
+  export default add_factory;

@@ -1,5 +1,6 @@
-var NewComponent = React.createClass({
-    render: function() {
+import React from 'react';
+class login extends Component {
+  render() {
       return (
         <div>
           {/*?php
@@ -67,4 +68,5 @@ var NewComponent = React.createClass({
         </div>
       );
     }
-  });
+  }
+  export default login;

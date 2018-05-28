@@ -1,5 +1,6 @@
-var NewComponent = React.createClass({
-    render: function() {
+import React from 'react';
+class add_product extends Component {
+    render() {
       return (
         <div>
           <button type="button" className="btn btn-primary" data-toggle="modal" data-target="#productModal"><span><i className="fa fa-plus" aria-hidden="true" /> Thêm</span></button>
@@ -86,4 +87,5 @@ var NewComponent = React.createClass({
       </div>
     );
   }
-});
+}
+export default add_product;

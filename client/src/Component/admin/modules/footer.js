@@ -1,5 +1,6 @@
-var NewComponent = React.createClass({
-    render: function() {
+import React from 'react';
+class footer extends Component {
+    render() {
       return (
   
         <footer className="main-footer">
@@ -17,4 +18,5 @@ var NewComponent = React.createClass({
         </footer>
       );
     }
-  });
+  }
+  export default footer;

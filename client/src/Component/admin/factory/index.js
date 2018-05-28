@@ -1,5 +1,5 @@
-var NewComponent = React.createClass({
-    render: function() {
+class index_factory extends Component {
+  render() {
       return (
   
         <div className="container">
@@ -35,5 +35,6 @@ var NewComponent = React.createClass({
       </div>
     );
   }
-});
+}
 <script src="source/admin/js/factory.js"></script>
+export default index_factory;

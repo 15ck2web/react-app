@@ -1,5 +1,7 @@
-var NewComponent = React.createClass({
-    render: function() {
+
+import React from 'react';
+class home extends Component {
+  render() {
       return (
         <div>
           <div className="content display-container">
@@ -65,4 +67,5 @@ var NewComponent = React.createClass({
         </div>
       );
     }
-  });
+  }
+  export default home;

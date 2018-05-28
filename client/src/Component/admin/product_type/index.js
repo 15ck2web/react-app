@@ -1,5 +1,5 @@
-var NewComponent = React.createClass({
-    render: function() {
+class index_product_type extends Component {
+    render () {
       return (
   
         <div className="container">
@@ -33,4 +33,6 @@ var NewComponent = React.createClass({
       </div>
     );
   }
-});
+}
+<script src="source/admin/js/product_type.js"></script>
+export default index_product_type;

@@ -1,5 +1,7 @@
-var NewComponent = React.createClass({
-    render: function() {
+import React from 'react';
+
+class index_product extends Component {
+    render () {
       return (
   
         <div className="container">
@@ -40,7 +42,8 @@ var NewComponent = React.createClass({
       </div>
     );
   }
-});
-<script type="text/javascript" src="source/admin/plugin/tinymce/tinymce.min.js"></script>
+}
+{/* <script type="text/javascript" src="source/admin/plugin/tinymce/tinymce.min.js"></script>
 <script type="text/javascript" src="source/admin/plugin/tinymce/init-tinymce.js"></script>
-<script src="source/admin/js/product.js"></script>
+<script src="source/admin/js/product.js"></script> */}
+export default index_product;
