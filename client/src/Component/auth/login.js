@@ -1,5 +1,5 @@
 import React from 'react';
-class login extends Component {
+class login extends React.Component {
   render() {
       return (
         <div>
@@ -10,14 +10,14 @@ class login extends Component {
           <meta charSet="utf-8" />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
           <title>Đăng Nhập Tài Khoản</title>
-          <meta name="description" content />
+          {/* <meta name="description" content />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta name="robots" content="all,follow" />
           <base href="<?= asset() ?>" />
           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" />
-          {/* theme stylesheet*/}
+          theme stylesheet */}
           <link rel="stylesheet" href="source/admin/css/style.default.css" id="theme-stylesheet" />
-          {/* Favicon*/}
+          Favicon
           <link rel="shortcut icon" href="favicon.png" />
           <div className="page login-page">
             <div className="container">

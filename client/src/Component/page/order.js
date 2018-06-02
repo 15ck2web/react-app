@@ -1,5 +1,5 @@
 import React from 'react';
-class order extends Component {
+class order extends React.Component {
   render() {
       return (
   
