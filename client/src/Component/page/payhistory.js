@@ -1,5 +1,5 @@
 import React from 'react';
-class payhistory extends Component {
+class Payhistory extends React.Component {
   render() {
       return (
   
@@ -7,7 +7,7 @@ class payhistory extends Component {
           <div style={{marginTop: '5%', textAlign: 'center'}}>
             <h1>Lịch sử thanh toán</h1>
           </div>
-          id) as $item):?&gt;
+         
           <table className="table table-striped table-sm">
             <thead>
               <tr>
@@ -19,20 +19,20 @@ class payhistory extends Component {
               </tr>
             </thead>
             <tbody>
-              {/*?php foreach(Bill::getByUserID(Session::get('auth')-*/}<tr>
-                <th scope="row">{/*?= $item-*/}MaHD ?&gt;</th>
-                <td>{/*?= $item-*/}NgayLap ?&gt;</td>
-                <td>{/*?= number_format($item-*/}TongTien) ?&gt;</td>
-                <td>{/*?= $item-*/}MaTK ?&gt;</td>
+              <tr>
+                <th scope="row"></th>
+                <td></td>
+                <td></td>
+                <td></td>
                 <td>
-                  {/*?= $item-*/}TenTinhTrang ?&gt;
+                  
                 </td>
               </tr>
-              {/*?php endforeach ?*/}
+           
             </tbody>
           </table>
         </div>
       );
     }
   }
-  export default payhistory;
+  export default Payhistory;

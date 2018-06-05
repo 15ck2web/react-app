@@ -1,5 +1,5 @@
 import React from 'react';
-class order extends React.Component {
+class Order extends React.Component {
   render() {
       return (
   
@@ -100,7 +100,7 @@ class order extends React.Component {
                               </div>
                               <div className="col-md-7">
                                 <img id="captchaImage" src="source/captcha/bj.jpg" width={100} alt="k thể tải captcha" />
-                                <a href="javascript:;"><img id="reload" src="source/captcha/reload.png" alt /></a>
+                                <a href="javascript:;"><img id="reload" src="source/captcha/reload.png" /></a>
                               </div>
                             </div>
                           </div>
@@ -115,38 +115,37 @@ class order extends React.Component {
                     </div>
                   </div>
                 </div>
-                {/*?php else: $item = Session::get('auth')?*/}
-                <h4>Xin chào {/*?= $item-*/}displayName ?&gt;</h4>
+             
+                <h4>Xin chào </h4>
                 <h5>Đây là giỏ hàng của bạn</h5>
-                {/*?php endif; ?*/}
+ 
               </div>
               <div className="col-md-7">
                 <div className="container">
                   <h2>Chi Tiết Đơn Hàng</h2>
                   <div id="ordered-item">
-                    {/*?php if(Session::has('cart')): ?*/}
+            
                     <div className="row">
-                      {/*?php foreach(Session::get('cart')-*/}items as $item):?&gt;
+                    
                       <div className="col-md-4">
                         <div className=" ordered-cart thumbnail">
                           <a className="x-cart" onclick="removeOrderedItem(<?= $item['item']->MaSP ?>)" href="javascript:;"><i className="fa fa-times" aria-hidden="true" /></a>
                           <a href="<?= route('page','detail',$item['item']->MaSP) ?>" target="_blank">
-                            <img src="source/img/product/<?= str_replace(' ','',$item['item']->MaLoaiSP) ?>/<?= $item['item']->HinhSP ?>" alt="Lights" height={100} style={{width: '100%'}} />
+                            <img src="source/img/product/3/1.jpg" alt="Lights" height={100} style={{width: '100%'}} />
                             <div className="caption">
-                              <p className="text-animate">Giá: {/*?= number_format($item['item']-*/}GiaSP) ?&gt; x{/*?= $item['qty'] ?*/}</p>
+                              <p className="text-animate">Giá: </p>
                             </div>
                           </a>
                         </div>
                       </div>
-                      {/*?php endforeach; ?*/}
+                 
                     </div>
-                    <h4 id="ordered-price">Tổng tiền: {/*?= number_format(Session::get('cart')-*/}totalPrice)  ?&gt; VNĐ</h4>
-                    {/*?php if(Session::has('cart')): ?*/}
+                    <h4 id="ordered-price">Tổng tiền: VNĐ</h4>
+                    
                     <input id="checkout" type="submit" defaultValue="Đặt hàng" className="btn btn-outline-info" />
-                    {/*?php else: ?*/}
+                   
                     <input id="checkout" type="submit" defaultValue="Đặt hàng" className="btn btn-outline-info" disabled />
-                    {/*?php endif; ?*/}
-                    {/*?php endif; ?*/}
+                
                   </div>
                 </div>
               </div>
@@ -156,4 +155,4 @@ class order extends React.Component {
       );
     }
   }
-  export default order;
+  export default Order;

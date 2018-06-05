@@ -1,5 +1,5 @@
 import React from 'react';
-class Highlight extends Component {
+class Highlight extends React.Component {
   render() {
       return (
         <div>
@@ -7,30 +7,22 @@ class Highlight extends Component {
             <h3>Sản Phẩm Xem Nhiều Nhất</h3>
           </div>
           <div className="container">
-            {/*?php 
-          $products = Product::mostView();
-          $mangsp = array_chunk($products,2);
-  
-     
-          foreach($mangsp as $sp){
-           ?*/}
+          
             <div className="row">
-              {/*?php
-              foreach($sp as $item){
-          ?*/}
+         
               <div className="col-6">
                 <div className="row">
                   <div className="col-md-6">
-                    <a href="<?= route('page','detail',$item->MaSP) ?>">
-                      <img src="source/img/product/<?= $item->MaLoaiSP?>/<?= $item->HinhSP ?>" width="90%" height="150px" alt="K load dc" />
+                    <a href="#">
+                      <img src="source/img/product/1/5.jpg" width="90%" height="150px" alt="K load dc" />
                     </a>
                   </div>
                   <div className="col-md-6">
-                    <a href="<?= route('page','detail',$item->MaSP) ?>">{/*?= $item-*/}TenSP ?&gt;</a>
-                    {/*?= substr($item-*/}MoTa,0,150). '...' ?&gt;
-                    <a href="<?= route('page','detail',$item->MaSP) ?>">xem thêm</a>
+                    <a href="#" >TenSP </a>
+                  
+                    <a href="#">>xem thêm</a>
                     <p style={{textAlign: 'center'}}>
-                      <a href="javascript:" onclick="addCart(<?= $item->MaSP ?>)">
+                      <a href="#">
                         <button className="btn btn-outline-info" style={{float: 'center'}}>
                           Thêm<span className="fa fa-cart-arrow-down" />
                         </button>
@@ -48,28 +40,20 @@ class Highlight extends Component {
               <h3>Sản Phẩm Mới Nhất</h3>
             </div>
             <div style={{height: '10%'}}>&nbsp;</div>
-            {/*?php 
-          $products = Product::news();
-          $mangsp = array_chunk($products,2);
-  
-     
-          foreach($mangsp as $sp){
-           ?*/}
+         
             <div className="row">
-              {/*?php
-              foreach($sp as $item){
-          ?*/}
+           
               <div className="col-6">
                 <div className="row">
                   <div className="col-md-6">
-                    <a href="<?= route('page','detail',$item->MaSP) ?>"> <img src="source/img/product/<?= $item->MaLoaiSP?>/<?= $item->HinhSP ?>" width="90%" height="150px" alt="K load dc" /></a>
+                    <a href="#"> <img src="source/img/product/2/1.jpg" width="90%" height="150px" alt="K load dc" /></a>
                   </div>
                   <div className="col-md-6">
-                    <a href="<?= route('page','detail',$item->MaSP) ?>">{/*?= $item-*/}TenSP ?&gt;</a>
+                    <a href="#">{/*?= $item-*/}TenSP ?&gt;</a>
                     {/*?= substr($item-*/}MoTa,0,150). '...' ?&gt;
-                    <a href="<?= route('page','detail',$item->MaSP) ?>">xem thêm</a>
+                    <a href="#">xem thêm</a>
                     <p style={{textAlign: 'center'}}>
-                      <a href="javascript:" onclick="addCart(<?= $item->MaSP ?>)">
+                      <a href="#">
                         <button className="btn btn-outline-info" style={{float: 'center'}}>
                           Thêm<span className="fa fa-cart-arrow-down" />
                         </button>
@@ -79,35 +63,27 @@ class Highlight extends Component {
                 </div>
                 <div>&nbsp;</div>
               </div>
-              {/*?php } ?*/}  
+          
             </div>
             <div style={{height: '10%'}}>&nbsp;</div>
-            {/*?php } ?*/}
+ 
             <div className="news" style={{textAlign: 'center'}}>
               <h3>Sản Phẩm Bán Nhiều Nhất</h3>
             </div>
-            {/*?php 
-          $products = Product::mostBuy();
-          $mangsp = array_chunk($products,2);
-  
-     
-          foreach($mangsp as $sp){
-           ?*/}
+         
             <div className="row">
-              {/*?php
-              foreach($sp as $item){
-          ?*/}
+          
               <div className="col-6">
                 <div className="row">
                   <div className="col-md-6">
-                    <a href="<?= route('page','detail',$item->MaSP) ?>"> <img src="source/img/product/<?= $item->MaLoaiSP?>/<?= $item->HinhSP ?>" width="90%" height="150px" alt="K load dc" /></a>
+                    <a href="#"> <img src="source/img/product/3/1.jpg" width="90%" height="150px" alt="K load dc" /></a>
                   </div>
                   <div className="col-md-6">
-                    <a href="<?= route('page','detail',$item->MaSP) ?>">{/*?= $item-*/}TenSP ?&gt;</a>
-                    {/*?= substr($item-*/}MoTa,0,150).'...' ?&gt;
-                    <a href="<?= route('page','detail',$item->MaSP) ?>">xem thêm</a> 
+                    <a href="#">TenSP </a>
+                  
+                    <a href="#">xem thêm</a> 
                     <p style={{textAlign: 'center'}}>
-                      <a href="javascript:" onclick="addCart(<?= $item->MaSP ?>)">
+                      <a href="#">
                         <button className="btn btn-outline-info" style={{float: 'center'}}>
                           Thêm<span className="fa fa-cart-arrow-down" />
                         </button>

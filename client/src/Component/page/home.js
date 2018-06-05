@@ -6,7 +6,7 @@ class Home extends React.Component {
         <div>
           <div className="content display-container">
             <div className="mySlides animate-fading">
-              <a href><img src="source/img/product/slider/1.jpg" style={{width: '100%'}} />
+              <a ><img src="source/img/product/slider/1.jpg" style={{width: '100%'}} />
                 <div className="slide-caption-left">
                   <h1><strong>Porsche</strong></h1>
                 </div>

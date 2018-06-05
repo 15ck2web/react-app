@@ -22,7 +22,7 @@ class footer extends React.Component{
               </div>
             </div>
           </footer>
-          <h1>Quản lí sản phẩm</h1>
+          
         </div>
       );
     }

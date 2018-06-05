@@ -1,5 +1,5 @@
 import React from 'react';
-class profile extends Component {
+class Profile extends React.Component {
   render() {
       return (
         <div>
@@ -19,11 +19,11 @@ class profile extends Component {
             {/*?php $item = User::find(Session::get('auth')-*/}id) ?&gt;
             <div className="profile-bio">
               <p>
-                Địa chỉ: <span id="user-address">{/*?= $item-*/}DiaChi ?&gt;</span>
+                Địa chỉ: 
                 <br />
-                Liên hệ: <span id="user-phone">{/*?= $item-*/}DienThoai?&gt;</span>
+                Liên hệ: 
                 <br />
-                Email: <span id="user-email">{/*?= $item-*/}Email?&gt;</span>
+                Email: 
               </p>
             </div>
             {/* some social links to show off */}
@@ -51,7 +51,7 @@ class profile extends Component {
             </ul>
             <div className="container row">
               <div className="col-4">
-                <a style={{float: 'right'}} href="<?=route('page','index') ?>"><i className="fa fa-home" />Trang chủ</a>
+                <a style={{float: 'right'}} href="localhost:3000"><i className="fa fa-home" />Trang chủ</a>
               </div>
               <div className="col-4">
                 <a style={{float: 'right'}} href="<?=route('auth','logout') ?>"><i className="fa fa-sign-out" />Đăng xuất</a>
@@ -109,4 +109,4 @@ class profile extends Component {
       );
     }
   }
-  export default profile;
+  export default Profile;

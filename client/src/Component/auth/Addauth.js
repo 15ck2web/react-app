@@ -1,5 +1,5 @@
 import React from 'react';
-class addauth extends Component {
+class Addauth extends React.Component {
     render() {
       return (
         <div>
@@ -10,7 +10,7 @@ class addauth extends Component {
                 <div className="modal-header">
                   <h5 className="modal-title" id="exampleModalLabel">Tài khoản mới</h5>
                   <button type="button" className="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">×</span>
+                    <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
                 <div className="modal-body">
@@ -29,7 +29,7 @@ class addauth extends Component {
                     <div className="row">
                       <div className="col-md-12">
                         <label htmlFor="ngaysinh" className="label-custom">Ngày Sinh</label>
-                        <input type="text" name="ngaysinh" id="ngaysinh" onfocus="(this.type='date')" onblur="(this.type='text')" valid />
+                        <input type="text" name="ngaysinh" id="ngaysinh" />
                       </div>
                     </div>
                     <div className="row">
@@ -66,7 +66,7 @@ class addauth extends Component {
                 </div>
                 <div className="modal-footer">
                   <img id="captchaImage" src="source/captcha/bj.jpg" width={100} alt="k thể tải captcha" />
-                  <a href="javascript:;"><img id="reload" src="source/captcha/reload.png" alt /></a>
+                  <a href="javascript:;"><img id="reload" src="source/captcha/reload.png"  /></a>
                   <button type="button" className="btn btn-warning" data-dismiss="modal">Thoát</button>
                   <button id="signUp" type="button" className="btn btn-primary">Đăng ký</button>
                 </div>
@@ -77,4 +77,4 @@ class addauth extends Component {
       );
     }
   };
-  export default addauth;
+  export default Addauth;

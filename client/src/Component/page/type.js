@@ -1,5 +1,5 @@
 import React from 'react';
-class type extends Component {
+class Type extends React.Component {
   render() {
       return (
         <div>
@@ -8,26 +8,17 @@ class type extends Component {
               <div className="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12" style={{margin: '5% 0'}}>
                 <h1 className="gallery-title">Sản Phẩm</h1>
               </div>
-              {/*?php
-      if(isset($_GET["trang"])){
-          $trang=$_GET["trang"];
-          settype($trang,["trang"]);
-  
-      }
-      else{
-              $trang=1;
-      }
-      foreach($this-types as $item):
-              */}
+   
               <div className="col-6">
                 <div>&nbsp;</div>
                 <div className="row">
                   <div className="col-6">
                     <a href="<?= route('page','detail',$item->MaSP) ?>">
-                      <img src="source/img/product/<?= $item->MaLoaiSP ?>/<?= $item->HinhSP ?>" width="90%" alt="K load dc" />
+                      <img src="source/img/product/4/4.jpg" width="90%" alt="K load dc" />
                     </a>
                   </div>
                   <div className="col-6">
+                    mota
                     {/*?= substr($item-*MoTa,0,150). '...' ?&*/}
                     <a href="<?= route('page','detail',$item->MaSP) ?>">Xem Chi Tiết
                     </a>
@@ -61,4 +52,4 @@ class type extends Component {
       );
     }
   }
-  export default type;
+  export default Type;

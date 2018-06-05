@@ -1,23 +1,23 @@
 import React from 'react';
-class search extends Component {
+class Search extends React.Component {
   render() {
       return (
         <div>
           <div className="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12" style={{margin: '5% 0'}}>
             <h1 className="gallery-title">Tìm Kiếm</h1>
           </div>
-          <div id="resultSearch"><h3 className="alert alert-success">{/*?= count($this-*/}items) ?&gt; Kết quả</h3></div>
+          <div id="resultSearch"><h3 className="alert alert-success"> Kết quả</h3></div>
           <div className="row" style={{margin: '5% 0'}} id="searchBody">
-            {/*?php foreach($this-*/}items as $item): ?&gt;
+           
             <div className="col-6">
               <div className="row">
                 <div className="col-md-6">
-                  <a href="<?= route('page','detail',$item->MaSP) ?>"> <img src="source/img/product/<?= $item->MaLoaiSP?>/<?= $item->HinhSP ?>" width="90%" height="150px" alt="K load dc" /></a>
+                  <a href="#"> <img src="source/img/product/2/2.jpg" width="90%" height="150px" alt="K load dc" /></a>
                 </div>
                 <div className="col-md-6">
-                  <a href="<?= route('page','detail',$item->MaSP) ?>">{/*?= $item-*/}TenSP ?&gt;</a>
-                  {/*?= substr($item-*/}MoTa,0,150). '...' ?&gt;
-                  <a href="<?= route('page','detail',$item->MaSP) ?>">xem thêm</a> 
+                  <a href="#">TenSP </a>
+               
+                  <a href="#">xem thêm</a> 
                 </div>        
               </div>
               <div>&nbsp;</div>
@@ -41,4 +41,4 @@ class search extends Component {
       );
     }
   }
-  export default search;
+  export default Search;

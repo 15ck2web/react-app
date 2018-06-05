@@ -1,5 +1,5 @@
 import React from 'react';
-class login extends React.Component {
+class Login extends React.Component {
   render() {
       return (
         <div>
@@ -65,8 +65,11 @@ class login extends React.Component {
                 });
             });
             </script> */}
+       
         </div>
       );
     }
   }
-  export default login;
+
+
+  export default Login;
