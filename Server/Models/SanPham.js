@@ -11,9 +11,9 @@ exports.ThemSanPham= function(sanPham, release)
 }
 
 //Sua san pham
-exports.ThemSanPham = function(sanPham, release)
+exports.SuaSanPham = function(sanPham, release)
 {
-    var query = "update sanpham Set TenSanPham=?, HinhURL=?, GiaSanPham=?, NgayNhap=?, SoLuongTon =?, SoLuongBan =?, SoLuotXem =?, MoTa =?, BiXoa =?, MaLoaiSanPham =?, MaLoaiSanXuat =? WHERE MaSanPham =?";
+    var query = "UPDATE sanpham SET TenSanPham=?, HinhURL=?, GiaSanPham=?, NgayNhap=?, SoLuongTon =?, SoLuongBan =?, SoLuotXem =?, MoTa =?, BiXoa =?, MaLoaiSanPham =?, MaLoaiSanXuat =? WHERE MaSanPham =?";
 
     db.executeParamsQuery(query, [sanPham.TenSanPham,
         sanPham.TenSanPham,

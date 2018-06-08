@@ -28,7 +28,7 @@ var NewComponent = React.createClass({
           <div className="page home-page">
             <a href="javascript:" id="return-to-top"><i className="fa fa-chevron-up" aria-hidden="true" /></a>
             {/*?php include('modules/header.php') ?*/}
-            {/*?php include($this-*/}partial) ?&gt;
+            {/*?php include($this-*/}
             {/*?php include('modules/footer.php') ?*/}
           </div>
           {/* Javascript files*/}
