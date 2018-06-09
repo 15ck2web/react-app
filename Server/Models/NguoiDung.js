@@ -1,14 +1,21 @@
 var db = require('./dataAccessObject')
-exports.ThemNguoiDung=(Nguoidung,release)=>{
+
+exports.DocTatCaNguoiDung=(callback)=>{
+    var query="SELECT * FROM taikhoan WHERE MaTaiKhoan=?";
+    db.executeParamsQuery(query,(err,data)=>{
+        callback(err,data);
+    });
+}
+
+exports.ThemNguoiDung=(Nguoidung,callback)=>{
     var query="INSERT INTO taikhoan SET ?";
     db.executeParamsQuery(query,taikhoan,(err,data)=>{
         callback(err,data);
     });
-
-
 }
-exports.ThemNguoiDung=(Nguoidung,release)=>{
-    var query ="update taikhoan SET TenDangNhap=?,MatKhau=?,TenHienThi=?,NgaySinh=?,DiaChi=?,DienThoai=?,Email=?,BiXoa=?,MaLoaiTaiKhoan WHERE MaTaiKhoan=?";
+
+exports.CapNhatNguoiDung=(Nguoidung,callback)=>{
+    var query ="update taikhoan SET TenDangNhap=?,MatKhau=?,TenHienThi=?,NgaySinh=?,DiaChi=?,DienThoai=?,Email=?,BiXoa=?  WHERE MaTaiKhoan=?";
     db.executeParamsQuery(query,[Nguoidung.TenDangNhap,
     Nguoidung.MatKhau,
     Nguoidung.TenHienThi,

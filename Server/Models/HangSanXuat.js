@@ -1,13 +1,13 @@
 var db=require('./dataAccessObject')
 
 
-exports.ThemHangSanXuat=(hangsanxuat,release)=>{
+exports.ThemHangSanXuat=(hangsanxuat,callback)=>{
     var query ="INSERT INTO hangsanxuat SET ?";
     db.executeParamsQuery(query,hangsanxuat,(err,data)=>{
         callback(err,data);
     });
 }
-exports.SuaHangSanXuat=(hangsanxuat,release)=>{
+exports.SuaHangSanXuat=(hangsanxuat,callback)=>{
     var query ="UPDATE hangsanxuat SET TenHangSanXuat=?,LogoURL=?,BiXoa=? WHERE MaHangSanXuat=?";
     db.executeParamsQuery(query,
     [hangsanxuat.TenHangSanXuat,
@@ -17,7 +17,7 @@ exports.SuaHangSanXuat=(hangsanxuat,release)=>{
     callback(err,data);
     });
 }
-exports.XoaHangSanXuat=(hangsanxuat,release)=>{
+exports.XoaHangSanXuat=(hangsanxuat,callback)=>{
     var query="DELETE FROM hangsanxuat WHERE MaHangSanXuat=?";
     db.executeParamsQuery(query,[hangsanxuat.MaHangSanXuat],(err,data)=>{
     callback(err,data);
