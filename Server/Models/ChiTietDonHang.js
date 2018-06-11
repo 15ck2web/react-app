@@ -8,7 +8,7 @@ exports.DocTatCaHoaDon=(ChiTietHoaDon,callback)=>{
     });
 }
 
-exports.ThemChiTietHoadDon=(ChiTietHoaDon,callback)=>{
+exports.ThemChiTietHoaDon=(ChiTietHoaDon,callback)=>{
     var query="INSERT INTO chitietdondathang SET?";
     db.executeParamsQuery(query,ChiTietHoaDon,(err,data)=>{
         callback(err,data);

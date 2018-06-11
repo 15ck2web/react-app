@@ -1,4 +1,4 @@
-var db = require('./dataAccessObject')
+var db = require('./dataAccessObject');
 
 exports.DocTatCaNguoiDung=(callback)=>{
     var query="SELECT * FROM taikhoan WHERE MaTaiKhoan=?";

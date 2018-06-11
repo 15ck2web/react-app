@@ -1,4 +1,4 @@
-var db=require('./dataAccessObject')
+var db=require('./dataAccessObject');
 
 
 exports.ThemHangSanXuat=(hangsanxuat,callback)=>{
@@ -21,5 +21,11 @@ exports.XoaHangSanXuat=(hangsanxuat,callback)=>{
     var query="DELETE FROM hangsanxuat WHERE MaHangSanXuat=?";
     db.executeParamsQuery(query,[hangsanxuat.MaHangSanXuat],(err,data)=>{
     callback(err,data);
+    });
+}
+exports.DocTatCaHangSanXuat=(callback)=>{
+    var query="SELECT * FROM hangsanxuat WHERE MaHangSancXuat =?";
+    db.executeParamsQuery(query,(err,data)=>{
+        callback(err,data);
     });
 }

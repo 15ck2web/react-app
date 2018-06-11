@@ -1,4 +1,4 @@
-var db=require('./dataAccessObject')
+var db=require('./dataAccessObject');
 
 exports.DocTatCaLoaiSanPham=(callback)=>{
     var query="SELECT * FROM loaisanpham WHERE MaLoaiSanPham =? ";
